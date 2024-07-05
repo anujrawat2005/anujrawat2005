@@ -14,7 +14,7 @@ const Restrauntcard = (props) => {
          alt ="restraunt-logo" src={CDN_URL+cloudinaryImageId}
          />
           <h1 className="font-bold py-4 text-lg">{name}</h1>
-          <h2>{cuisines.join(",")}</h2>
+          <h2 className="font-semibold">{cuisines.join(",")}</h2>
           <h3>{avgRatingString}</h3>
           <h4>{costfortwo}</h4>
           <h5>{deliveryTime} minutes</h5>
