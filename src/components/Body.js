@@ -7,6 +7,7 @@ import UserContext from "../utils/UserContext";
 
 
 
+
 function Body() {   
 
    //local state variable-superpowerful state variabless
@@ -50,6 +51,8 @@ function Body() {
 
    const{loggedInUser,setUserName}= useContext(UserContext);
 
+   
+
 
    return listofRestraunts.length === 0 ? 
      <Shimmer /> :
@@ -58,7 +61,7 @@ function Body() {
          <div className="Body ">
             <div className="filter flex">
                <div className="search m-4 p-4">
-                  <input type="text" className="border border-solid border-black" value={searchText}
+                  <input type="text" className="border border-solid border-black" placeholder="Resname" value={searchText}
                      onChange={(e) => {
                         setsearchText(e.target.value);
                       } } />
